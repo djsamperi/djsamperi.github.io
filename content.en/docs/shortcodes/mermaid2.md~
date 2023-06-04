@@ -1,0 +1,30 @@
+# Mermaid Chart
+
+[MermaidJS](https://mermaid-js.github.io/) is library for generating svg charts and diagrams from text.
+
+{{< hint info >}}
+**Override Mermaid Initialization Config**
+
+To override the [initialization config](https://mermaid-js.github.io/mermaid/#/Setup) for Mermaid,
+create a `mermaid.json` file in your `assets` folder!
+{{< /hint >}}
+
+## Example
+
+{{< mermaid >}}
+stateDiagram-v2
+    CRcpp: CRcpp
+    note right of CRcpp
+        CMake Build Tool
+    end note
+    CRcpp --> IDE
+    Rcpp --> CRcpp
+    RInside --> CRcpp
+    RCore --> HaskellR
+    RCore --> Rcpp
+    RCore --> RInside
+    SciLibs --> RCore
+    note left of IDE : Visual Studio, Xcode, VS code
+    note right of HaskellR : Haskell Interface
+    note right of Rcpp : C++ Interface
+{{< /mermaid >}}
