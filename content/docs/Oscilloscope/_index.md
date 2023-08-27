@@ -63,8 +63,3 @@ Here is ==very important stuff==.
 - [ ] Second item
 - [ ] Third item
 
-## Visual Studio IDE
-
-Here is the IDE
-
-![VS](/images/VisualStudioDebug.png)
