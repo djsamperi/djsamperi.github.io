@@ -1,15 +1,31 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL = 'https://djsamperi.github.io'
-title = 'Hugo Book'
+#baseURL = 'https://djsamperi.github.io'
+baseURL = '.'
+title = 'djsamperi projects'
 theme = 'hugo-book'
 canonifyURLs = true
+
+#This is used to enable use of Pygments CSS files
+#for coloring source code.
+#pygmentsUseClasses = true
 
 # Book configuration
 disablePathToLower = true
 enableGitInfo = true
 
 # Needed for mermaid/katex shortcodes
+[markup.highlight]
+  style = 'manni'
+  codeFences = true
+  guessSyntax = true
+  hl_Lines = ""
+#  lineNoStart = 1
+#  lineNos = true
+#  lineNumbersInTable = true
+#  tabWidth = 4
+#  noClasses = false
+
 [markup]
 [markup.goldmark.renderer]
   unsafe = true
@@ -17,25 +33,15 @@ enableGitInfo = true
 [markup.tableOfContents]
   startLevel = 1
 
-# Multi-lingual mode config
-# There are different options to translate files
-# See https://gohugo.io/content-management/multilingual/#translation-by-filename
-# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+## Default single-language configuration
 [languages]
-[languages.en]
-  languageName = 'English'
-  contentDir = 'content.en'
-  weight = 1
-
-[languages.ru]
-  languageName = 'Russian'
-  contentDir = 'content.ru'
-  weight = 2
-
-[languages.zh]
-  languageName = 'Chinese'
-  contentDir = 'content.zh'
-  weight = 3
+  [languages.en]
+    disabled = false
+    languageCode = ''
+    languageDirection = ''
+    languageName = ''
+    title = ''
+    weight = 0
 
 [menu]
 # [[menu.before]]
@@ -74,7 +80,7 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/alex-shpak/hugo-book'
+  BookRepo = 'https://github.com/djsamperi'
 
   # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
   # commit hash for 'doc' page type.
@@ -86,7 +92,7 @@ enableGitInfo = true
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath = 'edit/main/exampleSite'
+  # BookEditPath = 'edit/main/exampleSite'
 
   # Configure the date format used on the pages
   # - In git information

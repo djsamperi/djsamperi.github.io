@@ -4,11 +4,11 @@
 // @import "plugins/scrollbars";
 
 
-.highlight pre {
-    background-color: navy !important;
-}
+// Better to let highlight theme determine background color
+//.highlight pre {
+//    background-color: lightcyan !important;
+//}
 
 .book-page {
-    background-color: pink !important;
+    background-color: lightgray !important;
 }
-

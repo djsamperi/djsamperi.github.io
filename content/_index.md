@@ -12,6 +12,7 @@ Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
 olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
 modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
 
+
 <--->
 
 ## Suis quot vota
@@ -27,6 +28,37 @@ nunc! Fragosis suae dextra geruntur functus vulgata.
 Lorem **markdownum** emicat gestu. Cannis sol pressit ducta. **Est** Idaei,
 tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis
 sequens!
+
+```r
+    x <- sqrt(2)
+    some(foo)
+    generate(x)
+```
+
+```haskell
+    main :: IO ()
+    main = do
+        putStrLn "hello world"
+    f x = sqrt x
+```
+
+```python
+    import math
+    print(math.sqrt(2))
+```
+
+```c++
+	#include <iostream>
+
+	main() {
+  	       std::cout << "hello world" << std::endl;
+	}
+```
+    x <- sqrt(2)
+    some(foo)
+    generate(x)
+
+Some text not indented.
 
     var panel = ram_design;
     if (backup + system) {

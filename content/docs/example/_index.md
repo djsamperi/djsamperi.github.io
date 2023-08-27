@@ -1,10 +1,13 @@
 ---
-weight: 1
+weight: 10
+bookToc: false
 bookFlatSection: true
 title: "Example Site"
 ---
 
 # Introduction
+
+![Duomo](/images/PiazzaDelDuomo.jpg)
 
 ## Ferre hinnitibus erat accipitrem dixi Troiae tollens
 

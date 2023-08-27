@@ -1,5 +1,6 @@
 ---
-weight: 10
+weight: 12
+bookFlatSection: true
 ---
 
 # Ubi loqui
