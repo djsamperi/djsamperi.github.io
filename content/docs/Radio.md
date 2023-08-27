@@ -13,7 +13,5 @@ Radio image:
 
 ![Radio](/images/RadioFM_bb.png)
 
-{{< youtube 5J-ZeYlddSk >}}
 
-{{< tweet user="krystalball" id=1399713326503010307 >}}
 
