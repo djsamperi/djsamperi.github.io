@@ -14,6 +14,8 @@ bookFlatSection: true
 
 # Introduction
 
+New stuff
+
 Some introductory text
 
 ## An example **image**
