@@ -5,6 +5,7 @@
   </h1>
   {{ partial "docs/post-meta" . }}
   {{- .Content -}}
+  {{ template "_internal/disqus.html" . }}
 </article>
 {{ end }}
 
@@ -12,4 +13,3 @@
   {{ partial "docs/toc" . }}
 {{ end }}
 
-{{ template "_internal/disqus.html" . }}
