@@ -43,17 +43,18 @@ enableGitInfo = true
     title = ''
     weight = 0
 
-[menu]
+## Optional additinal menus below...
+#[menu]
 # [[menu.before]]
-[[menu.after]]
-  name = "Github"
-  url = "https://github.com/alex-shpak/hugo-book"
-  weight = 10
+#[[menu.after]]
+#  name = "Github"
+#  url = "https://github.com/alex-shpak/hugo-book"
+#  weight = 10
 
-[[menu.after]]
-  name = "Hugo Themes"
-  url = "https://themes.gohugo.io/hugo-book/"
-  weight = 20
+#[[menu.after]]
+#  name = "Hugo Themes"
+#  url = "https://themes.gohugo.io/hugo-book/"
+#  weight = 20
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
@@ -109,6 +110,7 @@ enableGitInfo = true
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
   BookComments = true
+  disqusShortname = "djsamperi-github-disqus"
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
