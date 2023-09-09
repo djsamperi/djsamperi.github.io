@@ -5,8 +5,8 @@
   </h1>
   {{ partial "docs/post-meta" . }}
   {{- .Content -}}
-  {{ template "_internal/disqus.html" . }}
 </article>
+  {{ template "_internal/disqus.html" . }}
 {{ end }}
 
 {{ define "toc" }}
