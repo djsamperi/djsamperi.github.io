@@ -2,4 +2,4 @@
 weight: 5
 ---
 
-Garden index
+Garden index 2
