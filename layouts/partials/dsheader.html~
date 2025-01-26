@@ -1,0 +1,48 @@
+{{/* I have not found a tool that checks Hugo template syntax, so a missing {{ end }}
+     will not be detected! Since use of {{ if }} below is basically a cut/paste operation,
+     matching {{ end }} is just a delimiter, not really a block marker. */}}
+
+{{ if site.Params.dsheader }}
+<div class="hdr-logo-grid">
+    <div class="grid-item item1">
+        <img src="{{ .Site.Param " staticPrefix" }}/images/dslogo.svg" height="80px" width="80px" alt="alt" />
+    </div>
+    <div class="grid-item item2">
+        <font size="5px" style="font-weight:bold;">Human Garden</font>
+    </div>
+    <div class="grid-item item3">
+        <font size="4px">by Dominick Samperi</font>
+    </div>
+    <div class="grid-item item4">
+        {{/* I cannot add menu items on the right hand side of the
+        header bar, but I can add a link to jump to my blog. */}}
+{{ if site.Params.mainmenu }}
+        <div id="menu">
+            <ul class="menu">
+                {{ $current := . }}
+                {{ range .Site.Menus.main }}
+                {{ $active := eq .Name $current.Title }}
+                {{ $active = or $active ( eq .Identifier $current.Section ) }}
+                <li class="menu-item" style="list-style-type:none;">
+                    <a class="{{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                    {{/*<a href="{{ .URL }}"><button class="btn-hdr" type="button">{{ .Name }}</button></a> */}}
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+
+    </div>
+{{ else }}
+    <div>NO MENUS</div>
+{{ end }}
+</div>
+{{ end }}
+{{ if site.Params.gardenimage }}
+<div class="flex-container">
+<picture>
+  <source media="(max-width:768px)" srcset="/images/hg80mri.jpg">
+  <source media="(max-width:1024px)" srcset="/images/hg200mri.jpg">
+  <img class="center" src="/images/hg250mri.jpg" alt="garden" style="width:auto;">
+</picture>
+</div>
+{{ end }}

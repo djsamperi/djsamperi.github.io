@@ -1,0 +1,92 @@
+img.center {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    //height: 100vh; /* Optional for vertical centering */
+}
+
+
+/* highlight must be relative, copy button absolute. Otherwise, the button
+   is not placed proberly. */
+.highlight {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.copy-code-button {
+  position: absolute;
+  z-index: 2;
+  top: 3rem;
+  right: 0;
+  
+  letter-spacing: 0.5px;
+  background-color: lightblue;
+  color: black;
+  
+    //font-weight: bold;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  padding: 2px 4px 2px 4px;
+  
+  white-space: nowrap;
+  
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+.copy-code-button:hover {
+    background-color: cyan;
+}
+
+/* Language pseudo-element style. */
+.chroma [data-lang]:before {
+    position: absolute;
+    content: attr(data-lang);
+
+    top: 0;
+    left: 0;
+    //font-weight: bold;
+    letter-spacing: 0.5px;
+    width: auto;
+    height: 1rem;
+    align-items: center;
+    display: flex;
+    
+    color: black;
+    background-color: lightgray;
+    
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 4px 4px 5px 4px;
+
+    /* Border around language might suggest this is a button. */
+    /* border: 1.25px solid #232326; */
+    
+    white-space: nowrap;
+}
+
+/* "pre" does not mean before here! Means preformatted text. */
+/* Use this to adjust background color of code block, for example. */
+pre.chroma {
+    position: relative;  // Allows absolute positioning of child elements
+    margin: 1em 0;       // Margin around the code block
+    padding-top: 1.5em;  // Space at the top for the header
+    overflow-x: auto;    // Horizontal scrolling if needed
+    border: 1px solid #ddd; // Optional border around the code block
+    line-height: 1.5;
+    border-radius: 4px;  // Optional rounded corners
+    //background-color: #f0f0f0; // From _chroma.scss
+    background-color: #f5f5f5; // White smoke
+    //background-color: pink; // White smoke
+}
+ 

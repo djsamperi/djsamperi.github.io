@@ -1,0 +1,13 @@
+
+{{/* Shortcode to insert one or more <br>'s in to HTML. */}}
+{{ $max := 1 }}
+{{ $m := .Get 0 }}
+{{ if ne $m nil }}
+{{ $max = $m }}
+{{/* Note: Variables defined here are local of if block! */}}
+{{/*       $max is not defined here, it is updated. */}}
+{{ end }}
+{{ range seq 1 $max }}
+  <br>
+  {{/* <h1>Max is {{ $max }} and index is {{ . }}</h1> <br> */}}
+{{ end }}
