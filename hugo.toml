@@ -11,8 +11,6 @@ enableGitInfo = true
 
 pygmentsUseClasses = false
 
-disqusShortname = 'humangarden-net'
-
 # Needed for mermaid/katex shortcodes
 # noClasses = true means Chroma applies inline styles in generated HTML,
 #   and these have priority because they are more specific.
@@ -97,6 +95,8 @@ disqusShortname = 'humangarden-net'
   weight = 41
 
 [params]
+  disqusShortname = 'humangarden-net'
+
   # gardenimage controls display of garden image on top of page
   # Both dsheader and mainmenu must be true to see the main menu (not needed)
   dsheader = false 

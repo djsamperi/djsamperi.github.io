@@ -1,0 +1,51 @@
+<script>
+window.disqus_config = function() {
+  this.page.url = window.location.href;
+  this.page.identifier = "{{ .File.Path }}";
+};
+</script>
+
+<h1>Hello World</h1>
+
+<div id="comments-section">
+  <button id="load-comments" class="load-comments-btn">💬 Load Comments</button>
+  <div id="disqus_thread" style="display:none;"></div>
+</div>
+
+<script>
+  document.getElementById('load-comments').addEventListener('click', function() {
+    this.style.display = 'none';
+    const disqusDiv = document.getElementById('disqus_thread');
+    disqusDiv.style.display = 'block';
+
+    if (!window.disqus_config) {
+      window.disqus_config = function () {
+        //this.page.url = "{{ .Permalink }}";
+        //this.page.identifier = "{{ .File.Path }}";
+	this.page.url = window.location.href;
+	this.page.identifier = "{{ .File.Path }}";
+      };
+    }
+
+    const d = document, s = d.createElement('script');
+    s.src = 'https://{{ .Site.Params.DisqusShortname }}.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  });
+</script>
+
+<style>
+  .load-comments-btn {
+    display: inline-block;
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 0.4em;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .load-comments-btn:hover {
+    background: #005fa3;
+  }
+</style>

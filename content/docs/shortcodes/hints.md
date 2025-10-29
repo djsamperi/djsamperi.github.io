@@ -13,11 +13,11 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 
 ## Example
 
-{{< hint info >}}
+{{% hint info %}}
 **Markdown content**  
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{< /hint >}}
+{{% /hint %}}
 
 {{< hint warning >}}
 **Markdown content**  

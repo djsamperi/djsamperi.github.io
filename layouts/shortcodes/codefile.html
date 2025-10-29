@@ -1,0 +1,4 @@
+{{ $path := .Get "path" }}
+{{ $lang := .Get "lang" | default "text" }}
+{{ $file := readFile (print "assets/" $path) }}
+{{ highlight $file $lang "" }}
