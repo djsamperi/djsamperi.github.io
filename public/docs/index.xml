@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on My New Hugo Project</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in Docs on My New Hugo Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>REPL</title>
+      <link>http://localhost:1313/docs/testrepl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/testrepl/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html&gt;&#xA;&lt;body&gt;&#xA;&#xA;&lt;h2&gt;&#34;REPL&#34; calling test cases:&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;a = 10&lt;/p&gt;&#xA;&lt;p&gt;b = 20&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;pre&gt;&#xA;  &#xA;  Map: map[string]interface {}{&amp;#34;a&amp;#34;:1, &amp;#34;b&amp;#34;:2}&#xA;&#xA;  Cond: positive&#xA;&#xA;  Sum: 5&#xA;&lt;/pre&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;pre&gt;&#xA;Sum: 30&#xA;Cond: positive&#xA;&lt;/pre&gt;&#xA;&#xA;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;&#xA;&#xA;&lt;p&gt;hello&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test PDF Open</title>
+      <link>http://localhost:1313/docs/testpdf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/testpdf/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/docs/bar.pdf&#34;&gt;foo&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/docs/smile.pdf&#34;&gt;Smile Paper&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
